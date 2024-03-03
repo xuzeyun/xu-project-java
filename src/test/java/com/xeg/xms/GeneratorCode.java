@@ -21,11 +21,11 @@ public class GeneratorCode {
                 })
                 .strategyConfig(builder -> {
                     builder.addInclude("sys_user")
-                            .addTablePrefix("sys_"); // 设置过滤表前缀
+                            .addTablePrefix("sys_") // 设置过滤表前缀
 
                     // 1 entity
-                    // .entityBuilder()
-                    // .enableFileOverride()
+                    .entityBuilder()
+                    .enableFileOverride()
                     // .enableLombok()
                     // .enableChainModel()
                     // .naming(NamingStrategy.underline_to_camel)
@@ -36,19 +36,19 @@ public class GeneratorCode {
                     //
                     //
                     // // 2 controller
-                    // .controllerBuilder()
-                    // .enableFileOverride()
+                    .controllerBuilder()
+                    .enableFileOverride()
                     // .enableRestStyle()
                     //
                     // // 3 service
-                    // .serviceBuilder()
-                    // .enableFileOverride()
+                    .serviceBuilder()
+                    .enableFileOverride()
                     // .formatServiceFileName("%sService")
                     // .formatServiceImplFileName("%sServiceImp")
                     //
                     // // 4 mapper
-                    // .mapperBuilder()
-                    // .enableFileOverride()
+                    .mapperBuilder()
+                    .enableFileOverride();
                     // .enableMapperAnnotation()
                     // .enableBaseResultMap()          // 启用 BaseResultMap 生成
                     // .enableBaseColumnList()         // 启用 BaseColumnList
