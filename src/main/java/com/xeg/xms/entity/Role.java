@@ -14,29 +14,26 @@ import java.time.LocalDateTime;
  * @author xuzeyun
  * @since 2024-03-12
  */
-@TableName("sys_user")
-public class User implements Serializable {
+@TableName("sys_role")
+public class Role implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
-    private String username;
+    private String name;
 
-    private String password;
+    private String code;
 
-    private String avatar;
-
-    private String email;
-
-    private String city;
+    /**
+     * 备注
+     */
+    private String remark;
 
     private LocalDateTime created;
 
     private LocalDateTime updated;
-
-    private LocalDateTime lastLogin;
 
     private Integer statu;
 
@@ -48,44 +45,28 @@ public class User implements Serializable {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getName() {
+        return name;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getPassword() {
-        return password;
+    public String getCode() {
+        return code;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setCode(String code) {
+        this.code = code;
     }
 
-    public String getAvatar() {
-        return avatar;
+    public String getRemark() {
+        return remark;
     }
 
-    public void setAvatar(String avatar) {
-        this.avatar = avatar;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
+    public void setRemark(String remark) {
+        this.remark = remark;
     }
 
     public LocalDateTime getCreated() {
@@ -104,14 +85,6 @@ public class User implements Serializable {
         this.updated = updated;
     }
 
-    public LocalDateTime getLastLogin() {
-        return lastLogin;
-    }
-
-    public void setLastLogin(LocalDateTime lastLogin) {
-        this.lastLogin = lastLogin;
-    }
-
     public Integer getStatu() {
         return statu;
     }
@@ -122,16 +95,13 @@ public class User implements Serializable {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "Role{" +
             "id = " + id +
-            ", username = " + username +
-            ", password = " + password +
-            ", avatar = " + avatar +
-            ", email = " + email +
-            ", city = " + city +
+            ", name = " + name +
+            ", code = " + code +
+            ", remark = " + remark +
             ", created = " + created +
             ", updated = " + updated +
-            ", lastLogin = " + lastLogin +
             ", statu = " + statu +
         "}";
     }

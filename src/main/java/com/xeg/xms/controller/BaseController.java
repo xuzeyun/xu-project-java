@@ -1,0 +1,47 @@
+package com.xeg.xms.controller;
+
+
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.xeg.xms.service.*;
+import com.xeg.xms.utils.RedisUtil;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.ServletRequestUtils;
+
+import javax.servlet.http.HttpServletRequest;
+
+public class BaseController {
+
+    @Autowired
+    HttpServletRequest req;
+
+    @Autowired
+    RedisUtil redisUtil;
+    // RedisUtil redisUtil;
+    //
+    // @Autowired
+    // UserService sysUserService;
+    //
+    // @Autowired
+    // SysRoleService sysRoleService;
+    //
+    // @Autowired
+    // SysMenuService sysMenuService;
+    //
+    // @Autowired
+    // SysUserRoleService sysUserRoleService;
+    //
+    // @Autowired
+    // SysRoleMenuService sysRoleMenuService;
+    //
+    // /**
+    //  * 获取页面
+    //  * @return
+    //  */
+    // public Page getPage() {
+    //     int current = ServletRequestUtils.getIntParameter(req, "cuurent", 1);
+    //     int size = ServletRequestUtils.getIntParameter(req, "size", 10);
+    //
+    //     return new Page(current, size);
+    // }
+
+}

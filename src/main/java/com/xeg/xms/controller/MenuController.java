@@ -12,7 +12,7 @@ import org.springframework.stereotype.Controller;
  * @since 2024-03-12
  */
 @Controller
-@RequestMapping("/xms/user")
-public class UserController {
+@RequestMapping("/xms/menu")
+public class MenuController {
 
 }

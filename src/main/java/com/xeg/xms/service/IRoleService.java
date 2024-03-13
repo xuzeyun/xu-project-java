@@ -1,6 +1,6 @@
 package com.xeg.xms.service;
 
-import com.xeg.xms.entity.User;
+import com.xeg.xms.entity.Role;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author xuzeyun
  * @since 2024-03-12
  */
-public interface IUserService extends IService<User> {
+public interface IRoleService extends IService<Role> {
 
 }

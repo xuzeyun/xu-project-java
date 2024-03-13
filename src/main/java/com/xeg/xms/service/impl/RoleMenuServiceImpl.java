@@ -1,8 +1,8 @@
 package com.xeg.xms.service.impl;
 
-import com.xeg.xms.entity.User;
-import com.xeg.xms.mapper.UserMapper;
-import com.xeg.xms.service.IUserService;
+import com.xeg.xms.entity.RoleMenu;
+import com.xeg.xms.mapper.RoleMenuMapper;
+import com.xeg.xms.service.IRoleMenuService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +15,6 @@ import org.springframework.stereotype.Service;
  * @since 2024-03-12
  */
 @Service
-public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IUserService {
+public class RoleMenuServiceImpl extends ServiceImpl<RoleMenuMapper, RoleMenu> implements IRoleMenuService {
 
 }

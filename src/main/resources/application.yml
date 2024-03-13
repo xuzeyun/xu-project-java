@@ -1,3 +1,5 @@
+server:
+  port: 8081
 
 # DataSource Config
 spring:
@@ -7,6 +9,10 @@ spring:
     url: jdbc:mysql://localhost:3306/xms?characterEncoding=utf-8&userSSL=false
     username: root
     password: sql123456
+  security:
+    user:
+      name: admin
+      password: 123456
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

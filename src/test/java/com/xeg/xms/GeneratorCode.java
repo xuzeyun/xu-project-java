@@ -20,7 +20,8 @@ public class GeneratorCode {
                             .pathInfo(Collections.singletonMap(OutputFile.xml, "C:\\Users\\xzy\\pro\\xms\\src\\main\\resources\\mapper")); // 设置mapperXml生成路径
                 })
                 .strategyConfig(builder -> {
-                    builder.addInclude("sys_user")
+                    // sys_user, sys_menu, sys_role, sys_role_menu, sys_user_role
+                    builder.addInclude("sys_user_role")
                             .addTablePrefix("sys_") // 设置过滤表前缀
 
                     // 1 entity

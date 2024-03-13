@@ -1,6 +1,6 @@
 package com.xeg.xms.mapper;
 
-import com.xeg.xms.entity.User;
+import com.xeg.xms.entity.RoleMenu;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author xuzeyun
  * @since 2024-03-12
  */
-public interface UserMapper extends BaseMapper<User> {
+public interface RoleMenuMapper extends BaseMapper<RoleMenu> {
 
 }
